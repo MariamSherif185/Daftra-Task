@@ -1,0 +1,50 @@
+@mixin fonts {
+  @for $font from 0 through 100 {
+    @for $weight from 0 through 800 {
+      .font-#{$font}-#{$weight} {
+        font-size: #{$font + "px"} !important;
+        font-weight: #{$weight} !important;
+      }
+    }
+  }
+}
+@include fonts;
+
+@mixin circle {
+  @for $circle from 0 through 500 {
+    .circle-#{$circle} {
+      width: #{$circle + "px"};
+      height: #{$circle + "px"};
+      border-radius: 50% !important;
+    }
+  }
+}
+@include circle;
+
+@mixin square {
+  @for $square from 0 through 500 {
+    .square-#{$square} {
+      width: #{$square + "px"};
+      height: #{$square + "px"};
+    }
+  }
+}
+@include square;
+
+@mixin border_Radius {
+  @for $i from 1 through 20 {
+    .br-#{$i} {
+      border-radius: #{$spacer * $i + "px"} !important;
+    }
+  }
+}
+@include border_Radius;
+
+@mixin position {
+  @each $position in $positions {
+    .pos-#{$position} {
+      position: #{$position};
+    }
+  }
+}
+@include position;
