@@ -48,3 +48,12 @@
   }
 }
 @include position;
+
+@mixin opacity {
+  @for $opacity from 0 through 9 {
+    .opacity-#{$opacity} {
+      opacity: #{"0." + $opacity};
+    }
+  }
+}
+@include opacity;

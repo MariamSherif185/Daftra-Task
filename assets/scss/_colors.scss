@@ -1,6 +1,24 @@
 .text-bar-four-green {
   color: $bar-four-green !important;
 }
+.text-tropical-trial {
+  color: $tropical-trial !important;
+}
 .bg-bar-four-green {
   background: $bar-four-green !important;
+}
+.bg-lynx-white {
+  background: $lynx-white !important;
+}
+.bg-light-green {
+  background: $light-green !important;
+}
+.border-bar-four-green {
+  border: 1px solid $bar-four-green !important;
+}
+.border-lynx-white {
+  background: 1px solid $lynx-white !important;
+}
+.border-grey {
+  border: 1px solid gray !important;
 }
